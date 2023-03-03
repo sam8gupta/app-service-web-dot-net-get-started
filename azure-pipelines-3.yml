@@ -6,8 +6,12 @@
 trigger:
 - master
 
+# pool:
+#   vmImage: 'windows-latest'
 pool:
-  vmImage: 'windows-latest'
+  name: 'Default'
+  demands:
+   - agent.name -equals 'EC2AMAZ-JIAESCF'
 
 variables:
   solution: '**/*.sln'
