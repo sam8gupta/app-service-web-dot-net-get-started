@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'EC2AMAZ-JIAESCF'
 
 variables:
   solution: '**/*.sln'
